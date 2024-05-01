@@ -3,7 +3,7 @@ let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 const default_config = {
   overrideStorage: true,
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'St. Petersburg',
     scale: "C",
   },
   clock: {
@@ -21,7 +21,6 @@ const default_config = {
   },
   keybindings: {
     "s": "search-bar",
-    "q": "config-tab",
   },
   disabled: [],
   localIcons: false,
@@ -29,35 +28,30 @@ const default_config = {
   openLastVisitedTab: true,
   tabs: [
     {
-      name: "chi ll",
-      background_url: "src/img/banners/cbg-2.gif",
+      name: "home",
+      background_url: "src/img/banners/bg-3.gif",
       categories: [{
         name: "Social Media",
         links: [
-          {
-            name: "whatsapp",
-            url: "https://web.whatsapp.com/",
-            icon: "brand-whatsapp",
-            icon_color: "#a9b665",
-          },
-          {
-            name: "twitter",
-            url: "https://twitter.com/home",
-            icon: "brand-twitter-filled",
-            icon_color: "#7daea3",
-          },
-          {
-            name: "reddit",
-            url: "https://www.reddit.com/",
-            icon: "brand-reddit",
-            icon_color: "#e78a4e",
-          },
-          {
-            name: "youtube",
-            url: "https://www.youtube.com/",
-            icon: "brand-youtube-filled",
-            icon_color: "#ea6962",
-          },
+          // {
+          //   name: "whatsapp",
+          //   url: "https://web.whatsapp.com/",
+          //   icon: "brand-whatsapp",
+          //   icon_color: "#a9b665",
+          // },
+          // {
+          //   name: "twitter",
+          //   url: "https://twitter.com/home",
+          //   icon: "brand-twitter-filled",
+          //   icon_color: "#7daea3",
+          // },
+          // {
+          //   name: "reddit",
+          //   url: "https://www.reddit.com/",
+          //   icon: "brand-reddit",
+          //   icon_color: "#e78a4e",
+          // },
+          
           {
             name: "twitch",
             url: "https://www.twitch.tv/",
@@ -71,36 +65,18 @@ const default_config = {
           {
             name: "chess",
             url: "https://www.chess.com/home",
-            icon: "chess-queen-filled",
+            icon: "chess-queen",
             icon_color: "#a9b665",
-          },
-          {
-            name: "monkeytype",
-            url: "https://monkeytype.com/",
-            icon: "keyboard",
-            icon_color: "#e78a4e",
-          },
-          {
-            name: "tetris",
-            url: "https://tetris.com/",
-            icon: "brand-apple-arcade",
-            icon_color: "#ea6962",
           },
         ],
       }, {
         name: "Video",
         links: [
           {
-            name: "disney+",
-            url: "https://www.disneyplus.com/home",
-            icon: "brand-disney",
-            icon_color: "#7daea3",
-          },
-          {
-            name: "primevideo",
-            url: "https://www.primevideo.com/region/eu/?ref_=dv_web_unknown",
-            icon: "brand-amazon",
-            icon_color: "#7daea3",
+            name: "youtube",
+            url: "https://www.youtube.com/",
+            icon: "brand-youtube-filled",
+            icon_color: "#ea6962",
           },
         ],
       }],
@@ -283,25 +259,19 @@ const default_config = {
           ],
         },
         {
-          name: "storage",
+          name: "university",
           links: [
             {
-              name: "drive",
-              url: "https://drive.google.com/drive/u/0/my-drive",
-              icon: "brand-google-drive",
+              name: "mail",
+              url: "https://mail.voenmeh.ru/mail",
+              icon: "mail",
               icon_color: "#e78a4e",
             },
             {
-              name: "dropbox",
-              url: "https://www.dropbox.com/h?role=personal&di=left_nav",
-              icon: "box-seam",
-              icon_color: "#7daea3",
-            },
-            {
-              name: "fotos",
-              url: "https://photos.google.com/u/1",
-              icon: "photo-filled",
-              icon_color: "#ea6962",
+              name: "moodle",
+              url: "https://moodle.voenmeh.ru",
+              icon: "mail",
+              icon_color: "#e78a4e",
             },
           ],
         },
