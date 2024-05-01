@@ -141,7 +141,10 @@ class Tabs extends Component {
               background-position-x: -240px;
           }
       }
-
+      .categories ul:nth-child(1) {
+        --flavour: #C5FF95;
+      }
+      
       .categories ul:nth-child(2) {
           --flavour: #e78a4e;
       }
